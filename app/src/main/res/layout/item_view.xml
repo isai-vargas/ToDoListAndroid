@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Diseño de la vista de cada elemento de tarea dentro de un CardView -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:elevation="4dp"
+        android:padding="16dp">
+
+        <!-- Contenedor principal vertical -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Subcontenedor horizontal para el texto y los botones -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- TextView para mostrar la descripción de la tarea -->
+                <TextView
+                    android:id="@+id/task_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <!-- Botón para eliminar la tarea -->
+                <Button
+                    android:id="@+id/button_delete_task"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delete_task" />
+
+                <!-- Botón para editar la tarea -->
+                <Button
+                    android:id="@+id/button_edit_task"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/edit"
+                    tools:ignore="TouchTargetSizeCheck,VisualLintBounds" /> <!-- Ignorar advertencias de tamaño y límites -->
+            </LinearLayout>
+
+            <!-- ImageView para mostrar la imagen asociada a la tarea -->
+            <ImageView
+                android:id="@+id/task_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/colorPrimary"
+                android:contentDescription="@string/imagen_de_la_tarea"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                tools:ignore="ImageContrastCheck" /> <!-- Ignorar advertencia de contraste de imagen -->
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

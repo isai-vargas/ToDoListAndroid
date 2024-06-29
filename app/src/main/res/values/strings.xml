@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MiListaDeTareas</string>
+    <string name="add_task">Agregar tarea</string>
+    <string name="task">Tarea</string>
+    <string name="delete_task">Eliminar tarea</string>
+    <string name="task_added">Tarea agregada</string>
+    <string name="task_deleted">Tarea eliminada</string>
+    <string name="enter_task">Ingrese una tarea</string>
+    <string name="add">Agregar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="add_photo">Agregar foto"</string>
+    <string name="imagen_de_la_tarea">Imagen de la tarea</string>
+    <string name="save">Guardar</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="task_updated">Task updated</string>
+    <string name="edit">Editar</string>
+
+</resources>

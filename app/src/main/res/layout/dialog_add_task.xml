@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Diseño del diálogo para agregar o editar una tarea -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Campo de texto para ingresar la descripción de la tarea -->
+    <EditText
+        android:id="@+id/edit_text_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="task"
+        android:hint="@string/enter_task"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textColorHint="@color/grey"
+        tools:ignore="VisualLintTextFieldSize" /> <!-- Ignorar advertencia de tamaño de campo de texto -->
+
+    <!-- Botón para agregar una foto a la tarea -->
+    <Button
+        android:id="@+id/button_add_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_photo" /> <!-- Texto del botón para añadir una foto -->
+</LinearLayout>

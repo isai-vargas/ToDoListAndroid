@@ -1,0 +1,8 @@
+<paths>
+    <!-- Define el directorio externo de archivos accesibles para imágenes -->
+    <external-files-path
+        name="my_images"
+        path="Pictures/" />
+    <!-- Nombre lógico para referirse al directorio  -->
+    <!-- Ruta relativa dentro del almacenamiento externo -->
+</paths>
